@@ -1,0 +1,13 @@
+---
+description: Technology for project
+alwaysApply: false
+---
+#UI_UX_Technology
+
+## Core Technology Stack Requirements
+- **Framework**: React 18+ with TypeScript
+- **Styling**: Tailwind CSS 3.0+ with custom design system
+- **icons**: React Lucide
+- **Components**: shadcn/ui component library
+- **Architecture**: Progressive Web App (PWA) with offline-first approach
+- **Responsive**: Mobile-first design with breakpoint-driven layouts

@@ -1,0 +1,126 @@
+---
+description:UI UX principles for web or mobile project
+globs: src/web/**/*,src/mobile/**/*, src/packages/web/**/*, src/packages/mobile/**/*
+alwaysApply: flase
+---   
+#UI_UX_Principles
+
+## Seven Foundational UI Design Principles
+
+### 1. Hierarchy Implementation
+**Technical Requirements:**
+- Use Tailwind's typography scale systematically: `text-xs` to `text-6xl`
+- Implement semantic heading structure (h1-h6) with consistent visual hierarchy
+- Apply `font-weight` classes strategically: `font-light`, `font-normal`, `font-medium`, `font-semibold`, `font-bold`
+- Use `space-y-*` and `space-x-*` utilities for consistent spacing
+- Implement visual hierarchy through color contrast: `text-primary`, `text-secondary`, `text-muted-foreground`
+
+**Code Pattern:**
+```tsx
+// Primary action - highest hierarchy
+<Button size="lg" className="text-lg font-semibold">
+// Secondary content - lower hierarchy  
+<p className="text-sm text-muted-foreground">
+```
+### 2. Consistency Standards
+**Design System Requirements:**
+- Create centralized theme configuration in `tailwind.config.js`
+- Use shadcn/ui's theming system for consistent component behavior
+- Implement consistent spacing scale: `4px` base unit (Tailwind's default)
+- Maintain consistent border radius: `rounded-sm`, `rounded-md`, `rounded-lg`
+- Use consistent animation timing: `transition-all duration-200 ease-in-out`
+
+**Component Standardization:**
+```tsx
+// Consistent button patterns
+const buttonVariants = {
+  primary: "bg-primary text-primary-foreground hover:bg-primary/90",
+  secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+  // All buttons use consistent padding, typography, and transitions
+}
+```
+
+### 3. Progressive Disclosure
+**Implementation Strategy:**
+- Use shadcn/ui components and leverage rules from shadcn.mdc
+- Use https://tailark.com/  or https://ui.aceternity.com/components for react Components**
+- Utilize `Collapsible` components for optional information
+- Create contextual help with `Popover` and `Tooltip` components
+- Always show progress indicators for multi-step processes
+
+**Navigation Pattern:**
+```tsx
+<Stepper currentStep={step} totalSteps={totalSteps} />
+<Progress value={completionPercentage} />
+```
+
+### 4. Strategic Contrast
+**Color System Implementation:**
+- Use Tailwind's color palette with semantic naming
+- Implement proper contrast ratios for accessibility (minimum 4.5:1 for normal text)
+- Create visual emphasis through background colors: `bg-primary`, `bg-destructive`, `bg-secondary`
+- Use border contrast for subtle emphasis: `border-primary/20`
+
+**Attention-Grabbing Elements:**
+```tsx
+// Critical actions use high contrast
+<Button variant="destructive" className="bg-red-600 text-white">
+  Delete Account
+</Button>
+// Secondary actions use subtle contrast
+<Button variant="ghost" className="text-muted-foreground">
+  Cancel
+</Button>
+```
+
+### 5. Accessibility Compliance
+**WCAG 2.1 AA Standards:**
+- All interactive elements must be keyboard navigable
+- Implement proper ARIA labels and roles
+- Ensure color contrast ratios meet standards
+- Provide alternative text for images and icons
+- Use semantic HTML elements appropriately
+- Support screen readers with proper heading structure
+
+**Implementation Requirements:**
+```tsx
+// Proper semantic structure
+<main role="main">
+  <h1 className="sr-only">Page Title</h1>
+  <Button 
+    aria-label="Close dialog"
+    className="focus-visible:ring-2 focus-visible:ring-primary"
+  >
+```
+
+### 6. Proximity Principles
+**Layout Patterns:**
+- Group related elements using Flexbox and Grid layouts
+- Use consistent spacing between related elements: `gap-2`, `gap-4`, `gap-6`
+- Implement card-based layouts for content grouping
+- Utilize whitespace effectively with `space-y-*` utilities
+- Create visual relationships through container grouping
+
+**Grouping Strategy:**
+```tsx
+<Card className="p-6 space-y-4">
+  {/* Related elements grouped together */}
+  <div className="flex gap-2">
+    <PlayButton />
+    <PauseButton />
+    <SkipButton />
+  </div>
+  {/* Unrelated actions separated */}
+  <div className="pt-4 border-t">
+    <ExitButton />
+  </div>
+</Card>
+```
+
+### 7. Alignment System
+**Grid-Based Layout:**
+- Use CSS Grid and Flexbox for precise alignment
+- Implement consistent grid system using Tailwind's grid utilities
+- Maintain vertical rhythm with consistent line heights
+- Use `items-center`, `justify-center`, `items-start` for proper alignment
+- Create visual balance through symmetrical layouts

@@ -1,0 +1,115 @@
+---
+description: pwa rules
+globs: src/web/**/*,src/mobile/**/*, src/packages/web/**/*, src/packages/mobile/**/*
+alwaysApply: false
+---
+## PWA-implementation Requirements
+
+### Performance Optimization
+- Implement code splitting with React.lazy()
+- Use dynamic imports for route-based code splitting
+- Optimize bundle size with tree shaking
+- Implement proper image optimization with next/image patterns
+- Use Web Workers for heavy computations
+
+### Offline-First Architecture
+- Implement service worker for caching strategies
+- Create offline fallback pages
+- Use IndexedDB for client-side data persistence
+- Implement background sync for data synchronization
+- Design graceful degradation for offline states
+
+### Responsive Design Standards
+**Breakpoint Strategy:**
+```css
+/* Mobile-first approach */
+/* Default: 0-640px (mobile) */
+/* sm: 640px+ (large mobile) */
+/* md: 768px+ (tablet) */
+/* lg: 1024px+ (desktop) */
+/* xl: 1280px+ (large desktop) */
+/* 2xl: 1536px+ (extra large) */
+```
+
+**Implementation Pattern:**
+```tsx
+<div className="
+  grid grid-cols-1 gap-4
+  sm:grid-cols-2 sm:gap-6
+  lg:grid-cols-3 lg:gap-8
+  xl:grid-cols-4
+">
+```
+
+## Component Architecture Standards
+
+### Atomic Design Methodology
+- **Atoms**: Basic building blocks (Button, Input, Icon)
+- **Molecules**: Simple combinations (SearchBox, FormField)
+- **Organisms**: Complex components (Header, ProductList)
+- **Templates**: Layout structures
+- **Pages**: Specific instances with real content
+
+### State Management Patterns
+- Use React Context for theme and user preferences
+- Implement proper data fetching with React Query/SWR
+- Maintain component state with useState for local interactions
+- Use useReducer for complex state logic
+- Implement proper error boundaries
+
+## Industry Best Practices
+
+### Performance Metrics
+- Target Lighthouse score: 90+ in all categories
+- First Contentful Paint (FCP): < 1.5 seconds
+- Largest Contentful Paint (LCP): < 2.5 seconds
+- Cumulative Layout Shift (CLS): < 0.1
+- First Input Delay (FID): < 100 milliseconds
+
+### Security Standards
+- Implement Content Security Policy (CSP)
+- Use HTTPS for all resources
+- Sanitize user inputs
+- Implement proper authentication patterns
+- Follow OWASP security guidelines
+
+### Testing Requirements
+- Unit tests for all components using Jest/React Testing Library
+- Integration tests for user workflows
+- Accessibility tests with axe-core
+- Visual regression tests
+- End-to-end tests with Playwright/Cypress
+
+## Code Quality Standards
+
+### TypeScript Implementation
+```tsx
+// Proper type definitions
+interface ComponentProps {
+  title: string;
+  onAction: (id: string) => void;
+  variant?: 'primary' | 'secondary' | 'destructive';
+  isLoading?: boolean;
+}
+
+// Generic type constraints
+function useAsyncOperation<T>(
+  asyncFn: () => Promise<T>
+): [T | null, boolean, Error | null]
+```
+
+### Error Handling Patterns
+```tsx
+// Comprehensive error boundaries
+<ErrorBoundary fallback={<ErrorFallback />}>
+  <Suspense fallback={<LoadingSpinner />}>
+    <AsyncComponent />
+  </Suspense>
+</ErrorBoundary>
+```
+
+### Documentation Requirements
+- JSDoc comments for all public APIs
+- Storybook stories for all components
+- README files for complex modules
+- Architecture decision records (ADRs)

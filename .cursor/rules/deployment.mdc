@@ -1,0 +1,19 @@
+---
+description: Deployment CI-CD Rules
+alwaysApply: false
+---
+## Deployment and Monitoring
+
+### CI/CD Pipeline
+- Automated testing on pull requests
+- Lighthouse CI for performance monitoring
+- Bundle analyzer for size tracking
+- Automated accessibility testing
+- Security scanning
+
+### Production Monitoring
+- Real User Monitoring (RUM)
+- Error tracking with Sentry
+- Performance monitoring
+- Accessibility monitoring
+- User analytics (privacy-compliant)

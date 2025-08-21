@@ -1,0 +1,192 @@
+---
+description: Style guide rules for ui ux web
+alwaysApply: false
+---
+# Modern Dark Theme Style Guide
+
+This style guide establishes a sophisticated, professional dark theme design system that balances enterprise functionality with modern consumer polish. The aesthetic emphasizes clarity, data visualization, and premium user experience through carefully orchestrated contrast and refined typography.
+
+## Color Palette
+
+### Primary Colors
+- **Primary Black** - #000000 (Main background, creating depth and sophistication)
+- **Primary White** - #FFFFFF (Primary text and high-contrast elements)
+- **Surface Dark** - #1A1A1A (Card backgrounds and elevated surfaces)
+
+### Secondary Colors
+- **Secondary Gray Dark** - #2D2D2D (Secondary surfaces and subtle backgrounds)
+- **Secondary Gray Medium** - #4A4A4A (Borders and dividers)
+- **Secondary Gray Light** - #9CA3AF (Secondary text and disabled states)
+
+### Accent Colors
+- **Accent Blue** - #3B82F6 (Primary actions, links, and data visualization)
+- **Accent Green** - #10B981 (Success states and positive metrics)
+- **Accent Orange** - #F59E0B (Warnings and highlights)
+- **Accent Red** - #EF4444 (Errors and critical actions)
+
+### Functional Colors
+- **Success Green** - #059669 (Confirmation messages and success indicators)
+- **Error Red** - #DC2626 (Error states and destructive actions)
+- **Warning Orange** - #D97706 (Warning states and caution indicators)
+- **Info Blue** - #2563EB (Information and neutral notifications)
+
+### Background Variants
+- **Background Primary** - #000000 (Main application background)
+- **Background Secondary** - #0F0F0F (Subtle variation for sections)
+- **Background Card** - #1F1F1F (Card and modal backgrounds)
+- **Background Hover** - #2A2A2A (Interactive element hover states)
+
+## Typography
+
+### Font Family
+- **Primary Font**: Inter (Web primary)
+- **Secondary Font**: SF Pro Display (macOS)
+- **Fallback Font**: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto
+
+### Font Weights
+- **Light**: 300
+- **Regular**: 400
+- **Medium**: 500
+- **Semibold**: 600
+- **Bold**: 700
+- **Heavy**: 800
+
+### Text Styles
+
+#### Headings
+- **H1**: 48px/56px, Bold, Letter spacing -0.5px
+  - Used for hero sections and primary page titles
+- **H2**: 36px/44px, Bold, Letter spacing -0.3px
+  - Used for major section headers and feature titles
+- **H3**: 28px/36px, Semibold, Letter spacing -0.2px
+  - Used for subsection headers and component titles
+- **H4**: 24px/32px, Semibold, Letter spacing -0.1px
+  - Used for card headers and secondary titles
+
+#### Body Text
+- **Body Large**: 18px/28px, Regular, Letter spacing 0px
+  - Primary reading text for main content areas
+- **Body**: 16px/24px, Regular, Letter spacing 0px
+  - Standard text for most UI elements and descriptions
+- **Body Small**: 14px/20px, Regular, Letter spacing 0.1px
+  - Secondary information and supporting text
+
+#### Specialized Text
+- **Caption**: 12px/16px, Medium, Letter spacing 0.5px
+  - Labels, timestamps, and metadata
+- **Button Large**: 16px/24px, Semibold, Letter spacing 0.2px
+  - Primary and secondary button text
+- **Button Small**: 14px/20px, Medium, Letter spacing 0.3px
+  - Compact buttons and inline actions
+- **Link Text**: 16px/24px, Medium, Letter spacing 0px, Accent Blue
+  - Clickable text elements throughout the application
+
+## Component Styling
+
+### Primary Button
+- **Background**: Accent Blue (#3B82F6)
+- **Text**: Primary White (#FFFFFF)
+- **Height**: 48px
+- **Corner Radius**: 8px
+- **Padding**: 24px horizontal, 12px vertical
+- **Hover State**: Background darkens to #2563EB
+- **Active State**: Background darkens to #1D4ED8
+
+### Secondary Button
+- **Border**: 2px Accent Blue (#3B82F6)
+- **Text**: Accent Blue (#3B82F6)
+- **Background**: Transparent
+- **Height**: 48px
+- **Corner Radius**: 8px
+- **Padding**: 22px horizontal, 10px vertical
+- **Hover State**: Background fills with Accent Blue, text becomes white
+
+### Ghost Button
+- **Text**: Primary White (#FFFFFF)
+- **Background**: Transparent
+- **Height**: 44px
+- **Hover State**: Background becomes Background Hover (#2A2A2A)
+
+### Card Component
+- **Background**: Background Card (#1F1F1F)
+- **Border**: 1px Secondary Gray Medium (#4A4A4A)
+- **Corner Radius**: 12px
+- **Padding**: 24px
+- **Shadow**: None (relies on border for definition)
+
+### Input Fields
+- **Height**: 48px
+- **Corner Radius**: 8px
+- **Border**: 1px Secondary Gray Medium (#4A4A4A)
+- **Active Border**: 2px Accent Blue (#3B82F6)
+- **Background**: Background Card (#1F1F1F)
+- **Text**: Primary White (#FFFFFF)
+- **Placeholder Text**: Secondary Gray Light (#9CA3AF)
+- **Padding**: 16px horizontal
+
+### Navigation Elements
+- **Background**: Background Card (#1F1F1F)
+- **Active Item**: Background Hover (#2A2A2A) with Accent Blue indicator
+- **Text**: Primary White (#FFFFFF)
+- **Secondary Text**: Secondary Gray Light (#9CA3AF)
+- **Dividers**: Secondary Gray Medium (#4A4A4A)
+
+### Icons
+- **Primary Icons**: 24px x 24px
+- **Small Icons**: 20px x 20px
+- **Large Icons**: 32px x 32px
+- **Interactive Color**: Accent Blue (#3B82F6)
+- **Secondary Color**: Secondary Gray Light (#9CA3AF)
+- **Style**: Outlined with 2px stroke weight
+
+## Spacing System
+
+- **4px** - Micro spacing (tight element relationships)
+- **8px** - Small spacing (internal component padding)
+- **12px** - Compact spacing (related elements)
+- **16px** - Default spacing (standard margins and padding)
+- **24px** - Medium spacing (component separation)
+- **32px** - Large spacing (section separation)
+- **48px** - Extra large spacing (major layout divisions)
+- **64px** - XXL spacing (page-level separations)
+
+## Motion & Animation
+
+### Transition Timing
+- **Micro Interactions**: 150ms, ease-out
+- **Standard Transitions**: 250ms, ease-in-out
+- **Complex Animations**: 400ms, cubic-bezier(0.4, 0.0, 0.2, 1)
+- **Page Transitions**: 350ms, cubic-bezier(0.25, 0.46, 0.45, 0.94)
+
+### Animation Principles
+- **Subtle Entrance**: Elements fade in with slight upward movement
+- **Hover Effects**: Scale (1.02) with shadow enhancement
+- **Data Visualization**: Smooth chart animations with staggered reveals
+- **Loading States**: Skeleton screens with subtle shimmer effects
+
+## Data Visualization
+
+### Chart Colors
+- **Primary Series**: Accent Blue (#3B82F6)
+- **Secondary Series**: Accent Green (#10B981)
+- **Tertiary Series**: Accent Orange (#F59E0B)
+- **Additional Series**: Sequential blue variations from light to dark
+
+### Grid and Axes
+- **Grid Lines**: Secondary Gray Medium (#4A4A4A) at 0.3 opacity
+- **Axis Labels**: Secondary Gray Light (#9CA3AF)
+- **Axis Lines**: Secondary Gray Medium (#4A4A4A)
+
+## Accessibility Considerations
+
+### Contrast Ratios
+- **Primary Text on Dark Background**: 21:1 (exceeds WCAG AAA)
+- **Secondary Text on Dark Background**: 7:1 (exceeds WCAG AA)
+- **Interactive Elements**: Minimum 4.5:1 contrast ratio
+- **Focus Indicators**: 2px Accent Blue outline with 2px offset
+
+### Interactive States
+- **Focus**: 2px Accent Blue outline
+- **Hover**: Background color change with smooth transition
+- **Active**: Slight scale reduction (0.98) with color change
+- **Disabled**: 0.5 opacity with cursor not-allowed
