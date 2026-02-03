@@ -10,6 +10,53 @@ This operating model defines how the **Director of Data & Technology Services (D
 
 The DDTS role exists to ensure **market priorities are translated into executable initiatives**, and that delivery through shared services meets business, regulatory, and operational expectations.
 
+The Director of Data & Technology Services is accountable for market-level leadership, coordination, and oversight of data and technology initiatives in alignment with PLAN priorities and corporate IT strategy.
+
+The role ensures that Shared IT Services and Enterprise Analytics deliver solutions that meet market needs, regulatory requirements, and operational expectations.
+
+---
+
+### Key Operating Principles
+
+- PLAN owns the business “what” and “why”
+- DDTS owns translation, prioritization, and market delivery oversight
+- Shared IT owns system changes and implementations
+- EA owns report and analytics production
+- DDTS does not build, code, or directly deliver enterprise services
+
+### Positioning Within the Organization
+
+- Reports into: PLAN (Market Leadership)
+- Operates in partnership with:
+    * Shared IT Services
+    * Enterprise Analytics
+- Acts as the single accountable market owner for data and technology outcomes
+
+
+### Success Definition
+
+- Success in this role is measured by:
+- Clear alignment between PLAN priorities and delivered solutions
+- Predictable, on-time delivery through shared services
+- High adoption and usability of implemented systems and reports
+- Reduced rework, escalations, and delivery friction
+- Strong stakeholder confidence and trust
+
+---
+
+### Executive Acknowledgement
+
+By signing below, leadership acknowledges and affirms the scope, authority, and accountability of the Director of Data & Technology Services as defined in this charter.
+
+			
+
+| Name | Title | Signature | Date | Comments |
+|---------------------|----------------|---------|-----------|------------|
+|  |  | | |  |		
+			
+
+
+
 ---
 
 ### Operating Model Diagram
